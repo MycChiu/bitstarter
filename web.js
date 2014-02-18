@@ -1,4 +1,5 @@
 var express = require('express');
+var fs = require('fs');
 var app = express();
 var index = new Buffer(fs.readFile('index.html'));
 app.use(express.logger());
